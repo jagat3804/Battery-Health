@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Battery Report</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Battery Health Report</h1>
+</header>
+
+<div class="report">
+
+<h2 id="car"></h2>
+
+<p id="batteryType"></p>
+<p id="capacity"></p>
+<p id="range"></p>
+<p id="charging"></p>
+<p id="price"></p>
+
+<p id="soh"></p>
+<p id="life"></p>
+<p id="prediction"></p>
+
+<canvas id="batteryChart"></canvas>
+
+<br>
+
+<button onclick="downloadPDF()">Download PDF</button>
+
+<button onclick="goDashboard()">Check Another Car</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
