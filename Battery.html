@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select Battery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<button onclick="goModels()">⬅ Back</button>
+
+<h2>Select Battery Type</h2>
+
+</header>
+
+<div class="grid">
+
+<div class="card" onclick="selectBattery('Lithium-ion')">
+<h3>Lithium-ion</h3>
+<p>Cycle Life: 1500</p>
+</div>
+
+<div class="card" onclick="selectBattery('LFP')">
+<h3>LFP</h3>
+<p>Cycle Life: 3000</p>
+</div>
+
+<div class="card" onclick="selectBattery('NMC')">
+<h3>NMC</h3>
+<p>Cycle Life: 2000</p>
+</div>
+
+<div class="card" onclick="selectBattery('Solid State')">
+<h3>Solid State</h3>
+<p>Cycle Life: 5000</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
